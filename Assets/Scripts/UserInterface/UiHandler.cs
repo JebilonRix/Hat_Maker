@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace RedPanda
+namespace RedPanda.UserInterface
 {
     public class UiHandler : MonoBehaviour
     {
@@ -17,6 +17,11 @@ namespace RedPanda
         {
             _nextButton.SetActive(false);
             _previousButton.SetActive(false);
+
+            for (int i = 0; i < _uiPrefabs.Count; i++)
+            {
+                _uiPrefabs[i].SetActive(false);
+            }
         }
         #endregion Unity Methods
 
