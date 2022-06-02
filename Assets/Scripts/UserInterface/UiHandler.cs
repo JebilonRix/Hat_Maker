@@ -7,10 +7,23 @@ namespace RedPanda
     {
         #region Fields
         [SerializeField] private List<GameObject> _uiPrefabs = new List<GameObject>();
+        [SerializeField] private GameObject _previousButton;
+        [SerializeField] private GameObject _nextButton;
         private int _index = 0;
         #endregion Fields
 
+        #region Unity Methods
+        private void Start()
+        {
+            _nextButton.SetActive(false);
+            _previousButton.SetActive(false);
+        }
+        #endregion Unity Methods
+
         #region Public Methods
+        /// <summary>
+        /// Activates next UI element.
+        /// </summary>
         public void NextUi()
         {
             if (_index == _uiPrefabs.Count - 1)
@@ -20,6 +33,9 @@ namespace RedPanda
 
             SetIndex(1);
         }
+        /// <summary>
+        /// Activates previous UI element.
+        /// </summary>
         public void PreviousUi()
         {
             if (_index == 0)

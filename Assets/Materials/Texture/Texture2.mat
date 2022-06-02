@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Yellow 6
+  m_Name: Texture2
   m_Shader: {fileID: 4800000, guid: 7ffc1bc2bbb1ef64f84b552b2d2f0619, type: 3}
   m_ShaderKeywords: TCP2_OUTLINE_MIN_SIZE TCP2_SHADOW_LIGHT_COLOR TCP2_TANGENT_AS_NORMALS
     TCP2_UV_NORMALS_FULL
@@ -156,7 +156,7 @@ Material:
     - _UseSpecular: 0
     - _ZWrite: 1
     m_Colors:
-    - _BaseColor: {r: 0.54901963, g: 0.011764706, b: 0.05490196, a: 1}
+    - _BaseColor: {r: 0.85098046, g: 0.23137257, b: 0.23137257, a: 1}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _HColor: {r: 1, g: 1, b: 1, a: 1}
