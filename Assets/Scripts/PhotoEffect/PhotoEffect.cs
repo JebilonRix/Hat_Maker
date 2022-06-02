@@ -1,5 +1,4 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -7,15 +6,21 @@ namespace RedPanda
 {
     public class PhotoEffect : MonoBehaviour
     {
+        #region Fields
         [SerializeField] private GameObject _ui;
         [SerializeField] private Image _flashImage;
         [SerializeField] private GameObject _photo;
         [SerializeField] private float _flashTime = 0.5f;
+        #endregion Fields
 
+        #region Public Methods
         public void Flash_Button()
         {
             StartCoroutine(FlashEffect());
         }
+        #endregion Public Methods
+
+        #region Private Methods
         private IEnumerator FlashEffect()
         {
             _ui.SetActive(false);
@@ -36,5 +41,6 @@ namespace RedPanda
 
             _flashImage.gameObject.SetActive(false);
         }
+        #endregion Private Methods
     }
 }

@@ -13,7 +13,7 @@ namespace RedPanda
         #region Properties
         public GameObject CurrentItem { get => _currentItem; private set => _currentItem = value; }
         #endregion Properties
-
+        
         #region Unity Methods
         private void Start()
         {
