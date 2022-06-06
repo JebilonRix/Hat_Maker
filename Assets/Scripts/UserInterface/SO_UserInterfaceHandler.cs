@@ -65,10 +65,10 @@ namespace RedPanda.UserInterface
 
             _initializator.SetActivation(_userInterfaceState, colorsNeeded, selectionAreaNeeded);
 
-            Debug.Log(id + " id");
-            Debug.Log(_userInterfaceState + " user interface state");
-            Debug.Log(colorsNeeded + " colorsNeeded");
-            Debug.Log(selectionAreaNeeded + " selectionAreaNeeded");
+            //Debug.Log(id + " id");
+            //Debug.Log(_userInterfaceState + " user interface state");
+            //Debug.Log(colorsNeeded + " colorsNeeded");
+            //Debug.Log(selectionAreaNeeded + " selectionAreaNeeded");
         }
         #endregion Public Methods
     }
