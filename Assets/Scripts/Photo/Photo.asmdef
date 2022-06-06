@@ -2,7 +2,8 @@
     "name": "Photo",
     "rootNamespace": "",
     "references": [
-        "GUID:2bafac87e7f4b9b418d9448d219b01ab"
+        "GUID:2bafac87e7f4b9b418d9448d219b01ab",
+        "GUID:c548c9c48a96ac54c9c932eb06dfabda"
     ],
     "includePlatforms": [],
     "excludePlatforms": [],

@@ -11,16 +11,6 @@ namespace RedPanda
         [SerializeField] private RawImage _photo;
         #endregion Fields
 
-        #region Unity Methods
-        //private void Update()
-        //{
-        //    if (Input.GetKeyDown(KeyCode.R))
-        //    {
-        //        _photo.texture = ToTexture2D(_renderTexture);
-        //    }
-        //}
-        #endregion Unity Methods
-
         #region Public Methods
         public void TakePhoto()
         {

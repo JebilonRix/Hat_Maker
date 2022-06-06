@@ -31,7 +31,6 @@ namespace RedPanda.UserInterface
             _objDic.Add(UserInterfaceState.HatSelection, ButtonsHat);
             _objDic.Add(UserInterfaceState.GlassSelection, ButtonsGlass);
             _objDic.Add(UserInterfaceState.TextureSelection, ButtonsTexture);
-
             _objDic.Add(UserInterfaceState.PoseSelection, PoseSelection);
             _objDic.Add(UserInterfaceState.TakePhoto, TakePhoto);
             _objDic.Add(UserInterfaceState.PhotoToPost, PhotoToPost);
