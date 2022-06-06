@@ -6,7 +6,7 @@ namespace RedPanda.Hat
     public class HatHandler : MonoBehaviour
     {
         #region Fields
-        [SerializeField] private Transform _hatPosition;
+        [SerializeField] private Vector3[] _hatPositions;
         [SerializeField] private HatData[] hatDatas;
 
         private HatType hatType = HatType.None;
@@ -24,8 +24,30 @@ namespace RedPanda.Hat
             {
                 var hat = Instantiate(hatDatas[i].HatPrefab);
                 hat.SetActive(false);
-                hat.transform.SetParent(_hatPosition);
-                hat.transform.position = _hatPosition.position;
+
+                switch (hatDatas[i].HatType)
+                {
+                    case HatType.Cap:
+                        hat.transform.position = _hatPositions[0];
+                        // hat.transform.position = _hatPosition.position;
+                        break;
+
+                    case HatType.French:
+                        hat.transform.position = _hatPositions[1];
+                        break;
+
+                    case HatType.SunHat:
+                        hat.transform.position = _hatPositions[2];
+                        break;
+
+                    case HatType.Milkman:
+                        hat.transform.position = _hatPositions[3];
+                        break;
+
+                    case HatType.Safari:
+                        hat.transform.position = _hatPositions[4];
+                        break;
+                }
 
                 _hatsList.Add(hat);
             }

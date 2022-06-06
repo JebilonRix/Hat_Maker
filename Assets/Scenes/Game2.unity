@@ -1265,7 +1265,7 @@ Transform:
   - {fileID: 540846093}
   - {fileID: 1476882982}
   m_Father: {fileID: 2723505465528143226}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &367394782
 GameObject:
@@ -2792,36 +2792,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 761885779}
   m_CullTransparentMesh: 1
---- !u!4 &800897512
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 800897513}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1.399, z: -0.0568}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 2723505465528143226}
-  m_RootOrder: 5
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &800897513
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 800897512}
-  m_Layer: 0
-  m_Name: HatPoint
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
 --- !u!1 &820189740
 GameObject:
   m_ObjectHideFlags: 0
@@ -3102,6 +3072,7 @@ GameObject:
   - component: {fileID: 845080437}
   - component: {fileID: 845080436}
   - component: {fileID: 845080435}
+  - component: {fileID: 845080438}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -3174,6 +3145,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 30, y: 0, z: 0}
+--- !u!114 &845080438
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 845080434}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: edce59f5416c44e41b4afb37704463fb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  reloadScene: 282
 --- !u!1 &925966670
 GameObject:
   m_ObjectHideFlags: 0
@@ -4635,7 +4619,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!114 &1496241412
 MonoBehaviour:
@@ -4649,7 +4633,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 79a0f91051cbc964da6ff4ea5ff9e585, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _hatPosition: {fileID: 800897512}
+  _hatPosition: {fileID: 0}
+  _hatPositions:
+  - {x: -0.012, y: 1.803, z: -7.781}
+  - {x: 0, y: 1.91, z: -7.832}
+  - {x: 0, y: 1.803, z: -7.781}
+  - {x: 0, y: 1.803, z: -7.781}
+  - {x: 0, y: 1.803, z: -7.781}
+  - {x: 0, y: 1.803, z: -7.781}
   hatDatas:
   - hatPrefab: {fileID: 1770110057642744186, guid: 7154bfbcdb4a6a941a16fae5e5ed8252, type: 3}
     hatType: 1
@@ -31057,7 +31048,6 @@ Transform:
   - {fileID: 7831058661468998657}
   - {fileID: 4857940901859213218}
   - {fileID: 6089367817451870658}
-  - {fileID: 800897512}
   - {fileID: 367394777}
   m_Father: {fileID: 0}
   m_RootOrder: 0
