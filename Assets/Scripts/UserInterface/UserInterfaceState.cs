@@ -6,7 +6,7 @@
         HatSelection = 1,
         TextureSelection = 2,
         GlassSelection = 3,
-        PoseSeleciton = 4,
+        PoseSelection = 4,
         TakePhoto = 5,
         PhotoToPost = 6,
         SocialMedia = 7
