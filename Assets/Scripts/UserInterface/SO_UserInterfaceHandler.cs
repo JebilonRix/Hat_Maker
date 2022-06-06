@@ -20,59 +20,66 @@ namespace RedPanda.UserInterface
         #region Public Methods
         public void Init(Initializator initializator)
         {
-            //for (int i = 0; i < canvases.Length; i++)
-            //{
-            //    _initilizator[i].canvas = canvases[i];
-            //}
-
             _initializator = initializator;
+
+            ChangeState(0);
         }
         public void ChangeState(int id)
         {
             _userInterfaceState = (UserInterfaceState)id;
 
+            bool colorsNeeded = false;
+            bool selectionAreaNeeded = false;
+
             switch (_userInterfaceState)
             {
                 case UserInterfaceState.MainMenu:
-                    _initializator.ObjDic["PlayButton"].SetActive(true);
+                    //selectionAreaNeeded = false;
+                    //colorsNeeded = false;
                     break;
 
                 case UserInterfaceState.HatSelection:
+                    selectionAreaNeeded = true;
+                    colorsNeeded = true;
                     break;
 
                 case UserInterfaceState.TextureSelection:
+                    selectionAreaNeeded = true;
+                    colorsNeeded = false;
                     break;
 
                 case UserInterfaceState.GlassSelection:
+                    selectionAreaNeeded = true;
+                    colorsNeeded = false;
                     break;
 
-                case UserInterfaceState.PoseSeleciton:
+                case UserInterfaceState.PoseSelection:
+                    //selectionAreaNeeded = false;
+                    //colorsNeeded = false;
                     break;
 
                 case UserInterfaceState.TakePhoto:
+                    //selectionAreaNeeded = false;
+                    //colorsNeeded = false;
                     break;
 
                 case UserInterfaceState.PhotoToPost:
+                    //selectionAreaNeeded = false;
+                    //colorsNeeded = false;
                     break;
 
                 case UserInterfaceState.SocialMedia:
-                    break;
-
-                default:
+                    //selectionAreaNeeded = false;
+                    //colorsNeeded = false;
                     break;
             }
 
-            //for (int i = 0; i < _userInterfaceCanvases.Length; i++)
-            //{
-            //    if (_userInterfaceState == _userInterfaceCanvases[i].userInterfaceState)
-            //    {
-            //        _userInterfaceCanvases[i].canvas.SetActive(true);
-            //    }
-            //    else
-            //    {
-            //        _userInterfaceCanvases[i].canvas.SetActive(false);
-            //    }
-            //}
+            _initializator.SetActivation(_userInterfaceState, colorsNeeded, selectionAreaNeeded);
+
+            Debug.Log(id + " id");
+            Debug.Log(_userInterfaceState + " user interface state");
+            Debug.Log(colorsNeeded + " colorsNeeded");
+            Debug.Log(selectionAreaNeeded + " selectionAreaNeeded");
         }
         #endregion Public Methods
     }
