@@ -21,7 +21,6 @@ namespace RedPanda.UserInterface
         public void Init(Initializator initializator)
         {
             _initializator = initializator;
-
             ChangeState(0);
         }
         public void ChangeState(int id)
@@ -34,8 +33,6 @@ namespace RedPanda.UserInterface
             switch (_userInterfaceState)
             {
                 case UserInterfaceState.MainMenu:
-                    //selectionAreaNeeded = false;
-                    //colorsNeeded = false;
                     break;
 
                 case UserInterfaceState.HatSelection:
@@ -54,23 +51,15 @@ namespace RedPanda.UserInterface
                     break;
 
                 case UserInterfaceState.PoseSelection:
-                    //selectionAreaNeeded = false;
-                    //colorsNeeded = false;
                     break;
 
                 case UserInterfaceState.TakePhoto:
-                    //selectionAreaNeeded = false;
-                    //colorsNeeded = false;
                     break;
 
                 case UserInterfaceState.PhotoToPost:
-                    //selectionAreaNeeded = false;
-                    //colorsNeeded = false;
                     break;
 
                 case UserInterfaceState.SocialMedia:
-                    //selectionAreaNeeded = false;
-                    //colorsNeeded = false;
                     break;
             }
 
