@@ -42,7 +42,7 @@ namespace RedPanda.UserInterface
 
                 case UserInterfaceState.TextureSelection:
                     selectionAreaNeeded = true;
-                    colorsNeeded = false;
+                    colorsNeeded = true;
                     break;
 
                 case UserInterfaceState.GlassSelection:
