@@ -38,11 +38,6 @@ namespace RedPanda.Sapka
         /// </summary>
         public void ActiveHat(int id)
         {
-            //if (_stats != null)
-            //{
-            //    _stats.ResetValues();
-            //}
-
             for (int i = 0; i < _hats.Length; i++)
             {
                 if (i == id)
@@ -65,10 +60,13 @@ namespace RedPanda.Sapka
         /// </summary>
         public void SetColor(int id)
         {
+            if (_activeHat == null)
+            {
+                return;
+            }
+
             _stats.SetColor(id);
             _currentId = id;
-
-            // Debug.Log("current id " + _currentId);
 
             if (_hasTexture)
             {
@@ -82,15 +80,11 @@ namespace RedPanda.Sapka
         {
             _stats.TextureType = (TextureType)id;
 
-            //Debug.Log("set texture ");
-
             if (_stats.TextureType != TextureType.Clear)
             {
                 _stats.SetColor(_currentId);
 
                 Material[] materialArray = _stats.Renderer.materials;
-
-                //Debug.Log("current texture " + (id).ToString());
 
                 _textureMaterial[id].SetColor("_BaseColor", materialArray[0].color);
                 _textureMaterial[id].SetTexture("_BaseMap", _texture[id]);
