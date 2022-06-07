@@ -82,7 +82,7 @@ namespace RedPanda.Sapka
         {
             _stats.TextureType = (TextureType)id;
 
-            Debug.Log("set texture ");
+            //Debug.Log("set texture ");
 
             if (_stats.TextureType != TextureType.Clear)
             {
@@ -90,7 +90,7 @@ namespace RedPanda.Sapka
 
                 Material[] materialArray = _stats.Renderer.materials;
 
-                Debug.Log("current texture " + (id).ToString());
+                //Debug.Log("current texture " + (id).ToString());
 
                 _textureMaterial[id].SetColor("_BaseColor", materialArray[0].color);
                 _textureMaterial[id].SetTexture("_BaseMap", _texture[id]);
