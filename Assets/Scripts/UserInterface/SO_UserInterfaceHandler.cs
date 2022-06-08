@@ -10,14 +10,10 @@ namespace RedPanda.UserInterface
         private Initializator _initializator;
         #endregion Fields
 
-        #region Properties
-        public UserInterfaceState UserInterfaceState { get => _userInterfaceState; private set => _userInterfaceState = value; }
-        #endregion Properties
-
         #region Unity Methods
         private void OnDisable()
         {
-            UserInterfaceState = UserInterfaceState.MainMenu;
+            _userInterfaceState = UserInterfaceState.MainMenu;
         }
         #endregion Unity Methods
 
@@ -29,12 +25,12 @@ namespace RedPanda.UserInterface
         }
         public void ChangeState(int id)
         {
-            UserInterfaceState = (UserInterfaceState)id;
+            _userInterfaceState = (UserInterfaceState)id;
 
             bool colorsNeeded = false;
             bool selectionAreaNeeded = false;
 
-            switch (UserInterfaceState)
+            switch (_userInterfaceState)
             {
                 case UserInterfaceState.MainMenu:
                     break;
@@ -67,7 +63,7 @@ namespace RedPanda.UserInterface
                     break;
             }
 
-            _initializator.SetActivation(UserInterfaceState, colorsNeeded, selectionAreaNeeded);
+            _initializator.SetActivation(_userInterfaceState, colorsNeeded, selectionAreaNeeded);
 
             //Debug.Log(id + " id");
             //Debug.Log(_userInterfaceState + " user interface state");
