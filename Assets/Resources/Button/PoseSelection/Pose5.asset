@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0365e3e613118ca4fa72fe455df929fd, type: 3}
-  m_Name: TopHat
+  m_Name: Pose5
   m_EditorClassIdentifier: 
-  _default: {fileID: 21300000, guid: 9409537594378864ba26503314377820, type: 3}
-  _pressed: {fileID: 21300000, guid: 855eac8400837bd4e8c49e41bb2afae8, type: 3}
+  _default: {fileID: 21300000, guid: 459fc4c07b7f791429606f22b49a6a46, type: 3}
+  _pressed: {fileID: 21300000, guid: 089adbbbfaa3c2441ae0dc5ba2ea5ed5, type: 3}

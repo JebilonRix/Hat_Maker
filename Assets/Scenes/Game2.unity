@@ -2513,6 +2513,18 @@ MonoBehaviour:
           m_StringArgument: Anim4
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1185253798}
+        m_TargetAssemblyTypeName: RedPanda.UserInterface.ButtonSpriteHandler, UserInterface
+        m_MethodName: StayPressed
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 3
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &626764729
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2643,6 +2655,18 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: Anim3
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1185253798}
+        m_TargetAssemblyTypeName: RedPanda.UserInterface.ButtonSpriteHandler, UserInterface
+        m_MethodName: StayPressed
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 1
+          m_FloatArgument: 0
+          m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &672566139
@@ -2997,6 +3021,18 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: Anim2
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1185253798}
+        m_TargetAssemblyTypeName: RedPanda.UserInterface.ButtonSpriteHandler, UserInterface
+        m_MethodName: StayPressed
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &741649081
@@ -3992,6 +4028,18 @@ MonoBehaviour:
           m_StringArgument: Anim1
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1185253798}
+        m_TargetAssemblyTypeName: RedPanda.UserInterface.ButtonSpriteHandler, UserInterface
+        m_MethodName: StayPressed
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 2
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1059485800
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4714,8 +4762,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c0d8a0d91de1f8843b353ffd2431e8e7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _buttonImage: []
-  _buttonSprites: []
+  _buttonImage:
+  - {fileID: 741649081}
+  - {fileID: 672566139}
+  - {fileID: 1059485800}
+  - {fileID: 626764729}
+  - {fileID: 1376476215}
+  _buttonSprites:
+  - {fileID: 11400000, guid: 5f83d63e9b3ea5947a500cfb28746cf7, type: 2}
+  - {fileID: 11400000, guid: 651b990863d625c43a1f1f95eabc9582, type: 2}
+  - {fileID: 11400000, guid: c6cab9805c581314abc44c8f7b5521ba, type: 2}
+  - {fileID: 11400000, guid: 4852e8121551c4a4bb2a05737f1918dd, type: 2}
+  - {fileID: 11400000, guid: 4ae836f5f0c247746b261dbafb65909e, type: 2}
 --- !u!114 &1221012922 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 2724144289196096558, guid: 4196765a743ec1443bbbcc865ea5b200, type: 3}
@@ -5445,6 +5503,18 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: Anim5
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1185253798}
+        m_TargetAssemblyTypeName: RedPanda.UserInterface.ButtonSpriteHandler, UserInterface
+        m_MethodName: StayPressed
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 4
+          m_FloatArgument: 0
+          m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1376476215
