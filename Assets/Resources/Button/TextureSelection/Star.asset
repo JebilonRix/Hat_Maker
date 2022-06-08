@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: Star
   m_EditorClassIdentifier: 
   _default: {fileID: 21300000, guid: 2cf1b0814757b174db36e204e1c9bfa1, type: 3}
-  _pressed: {fileID: 21300000, guid: 7a85c6868f3dce9419ae6fa4cc686c1a, type: 3}
+  _pressed: {fileID: 21300000, guid: d406e85b139374140a3481eefc7590db, type: 3}

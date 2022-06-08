@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: Diamond
   m_EditorClassIdentifier: 
   _default: {fileID: 21300000, guid: 1a041219978af2643b51b010716bd5aa, type: 3}
-  _pressed: {fileID: 21300000, guid: 6f00452541381f3479bb98adfabe01ae, type: 3}
+  _pressed: {fileID: 21300000, guid: c18e7bb9428257043b3c0c5b55bb6867, type: 3}

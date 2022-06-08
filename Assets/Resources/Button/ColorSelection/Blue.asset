@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: Blue
   m_EditorClassIdentifier: 
   _default: {fileID: 21300000, guid: ccdbe90f64409834792746fffcd0bc07, type: 3}
-  _pressed: {fileID: 21300000, guid: aa3d9c9aed2599c41a1c5b088a75dd5a, type: 3}
+  _pressed: {fileID: 21300000, guid: 8de7128472e81d5428b3db851fc1a18f, type: 3}

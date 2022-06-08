@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: Pose2
   m_EditorClassIdentifier: 
   _default: {fileID: 21300000, guid: 00795fbdc797fdf479cea0f9d9022ace, type: 3}
-  _pressed: {fileID: 21300000, guid: 43eb9db592463934cb4deb5294e7fe48, type: 3}
+  _pressed: {fileID: 21300000, guid: d7fb60f1af9d7034d9b703f4f1884f97, type: 3}

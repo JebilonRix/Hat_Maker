@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: Sun
   m_EditorClassIdentifier: 
   _default: {fileID: 21300000, guid: 771c0e5f57e533e4eb2cb9ddf00cbbfc, type: 3}
-  _pressed: {fileID: 21300000, guid: 0d95484ee78d216458a1620d5227358b, type: 3}
+  _pressed: {fileID: 21300000, guid: 7aa602bd747e09c46bb184b9bf401abb, type: 3}
