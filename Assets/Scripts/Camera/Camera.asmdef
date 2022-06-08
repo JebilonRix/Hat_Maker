@@ -1,0 +1,16 @@
+{
+    "name": "Camera",
+    "rootNamespace": "RedPanda",
+    "references": [
+        "GUID:c548c9c48a96ac54c9c932eb06dfabda"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
