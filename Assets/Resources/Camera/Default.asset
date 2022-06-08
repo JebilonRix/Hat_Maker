@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7699c5f9aba3d1c4cb0830f0302172b0, type: 3}
   m_Name: Default
   m_EditorClassIdentifier: 
-  _cameraPosition: {x: 0, y: 2, z: -9}
+  _cameraPosition: {x: 0, y: 2, z: -9.5}
   _cameraRotation: {x: 19.79, y: 0, z: 0}
