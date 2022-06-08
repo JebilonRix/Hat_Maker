@@ -1428,7 +1428,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3777318334322458863, guid: 6543d098b9841b648aafad4782cbdaa5, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.1
+      value: 1.9
       objectReference: {fileID: 0}
     - target: {fileID: 3777318334322458863, guid: 6543d098b9841b648aafad4782cbdaa5, type: 3}
       propertyPath: m_LocalPosition.z
@@ -5967,6 +5967,7 @@ GameObject:
   - component: {fileID: 1365860126}
   - component: {fileID: 1365860128}
   - component: {fileID: 1365860127}
+  - component: {fileID: 1365860129}
   m_Layer: 5
   m_Name: Score
   m_TagString: Untagged
@@ -6035,6 +6036,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1365860125}
   m_CullTransparentMesh: 1
+--- !u!114 &1365860129
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1365860125}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ce3f1ab8f1b2004ca765a7d33e2ccc4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _follower: 0
 --- !u!1 &1376476212
 GameObject:
   m_ObjectHideFlags: 0
@@ -6942,6 +6956,18 @@ MonoBehaviour:
         m_TargetAssemblyTypeName: RedPanda.UserInterface.PostMover, UserInterface
         m_MethodName: MovePost
         m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 1365860129}
+        m_TargetAssemblyTypeName: RedPanda.Scorer, Assembly-CSharp
+        m_MethodName: IncreaseFollowerCount
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
