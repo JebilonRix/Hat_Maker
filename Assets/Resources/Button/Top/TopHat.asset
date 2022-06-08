@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0365e3e613118ca4fa72fe455df929fd, type: 3}
   m_Name: TopHat
   m_EditorClassIdentifier: 
-  _default: {fileID: 21300000, guid: 9409537594378864ba26503314377820, type: 3}
-  _pressed: {fileID: 21300000, guid: 5c7da4406dbb1ca4b9c224879f34681a, type: 3}
+  _default: {fileID: 21300000, guid: b9baaa2fc3590d84aa70e93f307cc53f, type: 3}
+  _pressed: {fileID: 21300000, guid: 855eac8400837bd4e8c49e41bb2afae8, type: 3}
