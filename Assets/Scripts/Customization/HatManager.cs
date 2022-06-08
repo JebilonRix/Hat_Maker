@@ -78,6 +78,11 @@ namespace RedPanda.Sapka
         /// </summary>
         public void SetTexture(int id)
         {
+            if (_activeHat == null)
+            {
+                return;
+            }
+
             _stats.TextureType = (TextureType)id;
 
             if (_stats.TextureType != TextureType.Clear)
