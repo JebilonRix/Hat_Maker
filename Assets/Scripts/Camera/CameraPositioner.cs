@@ -24,7 +24,7 @@ namespace RedPanda.Camera
                     break;
 
                 case UserInterfaceState.TextureSelection:
-                    MoveCamera(1);
+                    MoveCamera(3);
                     break;
 
                 case UserInterfaceState.GlassSelection:
