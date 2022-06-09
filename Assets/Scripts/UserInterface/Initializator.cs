@@ -35,6 +35,7 @@ namespace RedPanda.UserInterface
             _objDic.Add(UserInterfaceState.TakePhoto, TakePhoto);
             _objDic.Add(UserInterfaceState.PhotoToPost, PhotoToPost);
             _objDic.Add(UserInterfaceState.SocialMedia, SocialMedia);
+            _objDic.Add(UserInterfaceState.ColorSelection, ButtonsColor);
 
             _userInterfaceHandler.Init(this);
         }

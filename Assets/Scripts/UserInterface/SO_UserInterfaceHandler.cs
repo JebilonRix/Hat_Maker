@@ -41,12 +41,12 @@ namespace RedPanda.UserInterface
 
                 case UserInterfaceState.HatSelection:
                     selectionAreaNeeded = true;
-                    colorsNeeded = true;
+                    colorsNeeded = false;
                     break;
 
                 case UserInterfaceState.TextureSelection:
                     selectionAreaNeeded = true;
-                    colorsNeeded = true;
+                    colorsNeeded = false;
                     break;
 
                 case UserInterfaceState.GlassSelection:
@@ -65,14 +65,14 @@ namespace RedPanda.UserInterface
 
                 case UserInterfaceState.SocialMedia:
                     break;
+
+                case UserInterfaceState.ColorSelection:
+                    selectionAreaNeeded = true;
+                    colorsNeeded = true;
+                    break;
             }
 
             _initializator.SetActivation(UserInterfaceState, colorsNeeded, selectionAreaNeeded);
-
-            //Debug.Log(id + " id");
-            //Debug.Log(_userInterfaceState + " user interface state");
-            //Debug.Log(colorsNeeded + " colorsNeeded");
-            //Debug.Log(selectionAreaNeeded + " selectionAreaNeeded");
         }
         #endregion Public Methods
     }

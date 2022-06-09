@@ -33,6 +33,15 @@ namespace RedPanda.Sapka
         #endregion Unity Methods
 
         #region Public Methods
+        public void NoHat()
+        {
+            _activeHat = null;
+
+            for (int i = 0; i < _hats.Length; i++)
+            {
+                SetDeactive(i);
+            }
+        }
         /// <summary>
         /// This is for ui to set active hat.
         /// </summary>
@@ -48,10 +57,7 @@ namespace RedPanda.Sapka
                 }
                 else
                 {
-                    if (_createdHat[i].activeSelf)
-                    {
-                        _createdHat[i].SetActive(false);
-                    }
+                    SetDeactive(i);
                 }
             }
         }
@@ -107,5 +113,15 @@ namespace RedPanda.Sapka
             }
         }
         #endregion Public Methods
+
+        #region Private Methods
+        private void SetDeactive(int i)
+        {
+            if (_createdHat[i].activeSelf)
+            {
+                _createdHat[i].SetActive(false);
+            }
+        }
+        #endregion Private Methods
     }
 }

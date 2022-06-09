@@ -9,6 +9,7 @@
         PoseSelection = 4,
         TakePhoto = 5,
         PhotoToPost = 6,
-        SocialMedia = 7
+        SocialMedia = 7,
+        ColorSelection = 8
     }
 }
