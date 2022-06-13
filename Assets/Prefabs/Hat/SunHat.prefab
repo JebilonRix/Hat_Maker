@@ -170,7 +170,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   slot:
-    Index: 0
+    Index: 1
     Name: _BaseMap
   coord: 0
   group:
@@ -202,5 +202,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 0
-  copySplatData: 0
+  copySplatData: 1
   activated: 0

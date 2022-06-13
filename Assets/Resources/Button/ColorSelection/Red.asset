@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0365e3e613118ca4fa72fe455df929fd, type: 3}
   m_Name: Red
   m_EditorClassIdentifier: 
-  _default: {fileID: 21300000, guid: 10b345c11fd2ad345919db0eb8ff13d1, type: 3}
-  _pressed: {fileID: 21300000, guid: 4aa6bc81753d7d74aa1280f0a6d44eb6, type: 3}
+  _default: {fileID: 21300000, guid: 4d83d6c2789836b4f80bacbf493496ab, type: 3}
+  _pressed: {fileID: 21300000, guid: f9880c303d542a44aa61512cd7620fcb, type: 3}

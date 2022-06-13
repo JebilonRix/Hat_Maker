@@ -171,7 +171,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 0
-  copySplatData: 0
+  copySplatData: 1
   activated: 0
 --- !u!114 &5114269907194499864
 MonoBehaviour:

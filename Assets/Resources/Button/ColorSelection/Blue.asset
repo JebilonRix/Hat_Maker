@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0365e3e613118ca4fa72fe455df929fd, type: 3}
   m_Name: Blue
   m_EditorClassIdentifier: 
-  _default: {fileID: 21300000, guid: ccdbe90f64409834792746fffcd0bc07, type: 3}
-  _pressed: {fileID: 21300000, guid: 8de7128472e81d5428b3db851fc1a18f, type: 3}
+  _default: {fileID: 21300000, guid: 01d066c612e13bc46994e839ea2fbac3, type: 3}
+  _pressed: {fileID: 21300000, guid: 1bb22ad516dc51f48afce4c56088e59e, type: 3}

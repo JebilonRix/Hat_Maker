@@ -684,6 +684,159 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 93819788}
   m_CullTransparentMesh: 1
+--- !u!1 &178465645
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 178465646}
+  - component: {fileID: 178465650}
+  - component: {fileID: 178465649}
+  - component: {fileID: 178465648}
+  - component: {fileID: 178465647}
+  m_Layer: 5
+  m_Name: Button_Left
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &178465646
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 178465645}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1725842482}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 95, y: 778}
+  m_SizeDelta: {x: 200, y: 200}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &178465647
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 178465645}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 306cc8c2b49d7114eaa3623786fc2126, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_IgnoreLayout: 1
+  m_MinWidth: -1
+  m_MinHeight: -1
+  m_PreferredWidth: -1
+  m_PreferredHeight: -1
+  m_FlexibleWidth: -1
+  m_FlexibleHeight: -1
+  m_LayoutPriority: 1
+--- !u!114 &178465648
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 178465645}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_WrapAround: 0
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 0
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 21300000, guid: aa3d9c9aed2599c41a1c5b088a75dd5a, type: 3}
+    m_PressedSprite: {fileID: 21300000, guid: aa3d9c9aed2599c41a1c5b088a75dd5a, type: 3}
+    m_SelectedSprite: {fileID: 21300000, guid: aa3d9c9aed2599c41a1c5b088a75dd5a, type: 3}
+    m_DisabledSprite: {fileID: 21300000, guid: aa3d9c9aed2599c41a1c5b088a75dd5a, type: 3}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 178465649}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 845080439}
+        m_TargetAssemblyTypeName: RedPanda.Camera.CameraPositioner, Camera
+        m_MethodName: ColoringPositions
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: -1
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &178465649
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 178465645}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: ccdbe90f64409834792746fffcd0bc07, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &178465650
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 178465645}
+  m_CullTransparentMesh: 1
 --- !u!1 &218420562
 GameObject:
   m_ObjectHideFlags: 0
@@ -873,7 +1026,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 553406044}
         m_TargetAssemblyTypeName: RedPanda.Sprey.SpreyHandler, Sprey
-        m_MethodName: SetPrefab
+        m_MethodName: ActiveSprey
         m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1731,14 +1884,14 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 553406044}
         m_TargetAssemblyTypeName: RedPanda.Sprey.SpreyHandler, Sprey
-        m_MethodName: SetPrefab
+        m_MethodName: ActiveSprey
         m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: pink
+          m_StringArgument: blue
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &383672575
@@ -1875,14 +2028,14 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 553406044}
         m_TargetAssemblyTypeName: RedPanda.Sprey.SpreyHandler, Sprey
-        m_MethodName: SetPrefab
+        m_MethodName: ActiveSprey
         m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: pink
+          m_StringArgument: cyan
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &405383512
@@ -2387,7 +2540,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 2661159351314214988, guid: f29b5fc10397dd64296ca94f218c9d6e, type: 3}
   m_PrefabInstance: {fileID: 1064251947}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2045659517}
+  m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0fc10c7afde13ed42a9a0c677abbd0e1, type: 3}
@@ -3763,14 +3916,14 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 553406044}
         m_TargetAssemblyTypeName: RedPanda.Sprey.SpreyHandler, Sprey
-        m_MethodName: SetPrefab
+        m_MethodName: ActiveSprey
         m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: pink
+          m_StringArgument: red
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &820189743
@@ -3907,14 +4060,14 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 553406044}
         m_TargetAssemblyTypeName: RedPanda.Sprey.SpreyHandler, Sprey
-        m_MethodName: SetPrefab
+        m_MethodName: ActiveSprey
         m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: pink
+          m_StringArgument: white
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &832558464
@@ -4244,12 +4397,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _userInterfaceHandler: {fileID: 11400000, guid: d9abb76cbad31b84b84b2e85ee342d49, type: 2}
+  _mover: {fileID: 0}
   _cameraPositions:
   - {fileID: 11400000, guid: 4dd421d44d751de4f91c2b68871aaa78, type: 2}
   - {fileID: 11400000, guid: 4c5a10fee716eca4b9fb50dc5e7e9d47, type: 2}
   - {fileID: 11400000, guid: c27956e46a9668242bd739a1c5bcfb93, type: 2}
   - {fileID: 11400000, guid: ab9996bcac072d34285551aee8d71e71, type: 2}
-  - {fileID: 11400000, guid: f8b353b84c5e0ed46a209bdf11afcbac, type: 2}
+  front: {fileID: 11400000, guid: f8b353b84c5e0ed46a209bdf11afcbac, type: 2}
+  right: {fileID: 11400000, guid: b426b7fd841de6c409c5c87fe945b228, type: 2}
+  back: {fileID: 11400000, guid: 3f69501024a96ff44b8544f3f947ef00, type: 2}
+  left: {fileID: 11400000, guid: c8cadb634d7d72d4aa6a7fd473d30a03, type: 2}
 --- !u!4 &857307903 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5184328686084694039, guid: c164b7420c94d0344824cad3613bd56e, type: 3}
@@ -4645,7 +4802,7 @@ PrefabInstance:
       objectReference: {fileID: 1638599220495225972}
     - target: {fileID: 2661159351314214989, guid: f29b5fc10397dd64296ca94f218c9d6e, type: 3}
       propertyPath: m_RootOrder
-      value: 7
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 2661159351314214989, guid: f29b5fc10397dd64296ca94f218c9d6e, type: 3}
       propertyPath: m_LocalPosition.x
@@ -5327,69 +5484,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 502a8d6d9bccf5f4cbfe9e2f938a29f8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!1 &1240389256
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1240389258}
-  - component: {fileID: 1240389257}
-  m_Layer: 0
-  m_Name: FlowManager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
-  m_IsActive: 0
---- !u!114 &1240389257
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1240389256}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4506a7197d443c64c96ddcd31a481369, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _keywords:
-  - start
-  - select_hat
-  - paint_hat
-  - add_texture
-  - select_glass
-  - select_pose
-  - take_photo
-  - social_media
-  _character: {fileID: 3350684058711726016}
-  _sprey: {fileID: 0}
-  _photoCamera: {fileID: 1758690286}
-  _photocu: {fileID: 2045659517}
-  _startMenu: {fileID: 290195222}
-  _selectionHat: {fileID: 1074564151}
-  _selectionColor: {fileID: 1725842481}
-  _selectionTexture: {fileID: 1934156384}
-  _selectionGlass: {fileID: 1636181052}
-  _selectionPose: {fileID: 1185253793}
-  _selectionSocialMedia: {fileID: 0}
---- !u!4 &1240389258
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1240389256}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1277740778}
-  m_RootOrder: 4
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1258832911
 GameObject:
   m_ObjectHideFlags: 0
@@ -5499,7 +5593,6 @@ Transform:
   - {fileID: 349556738}
   - {fileID: 1033867769}
   - {fileID: 857307903}
-  - {fileID: 1240389258}
   - {fileID: 1301564820}
   - {fileID: 2032600242}
   - {fileID: 2045659518}
@@ -5600,7 +5693,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1277740778}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1308221272
 GameObject:
@@ -6764,14 +6857,14 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 553406044}
         m_TargetAssemblyTypeName: RedPanda.Sprey.SpreyHandler, Sprey
-        m_MethodName: SetPrefab
+        m_MethodName: ActiveSprey
         m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: pink
+          m_StringArgument: orange
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1647159466
@@ -7112,6 +7205,159 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1702483459}
   m_CullTransparentMesh: 1
+--- !u!1 &1712614490
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1712614491}
+  - component: {fileID: 1712614495}
+  - component: {fileID: 1712614494}
+  - component: {fileID: 1712614493}
+  - component: {fileID: 1712614492}
+  m_Layer: 5
+  m_Name: Button_Right
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1712614491
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1712614490}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1725842482}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 989, y: 778}
+  m_SizeDelta: {x: 200, y: 200}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1712614492
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1712614490}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 306cc8c2b49d7114eaa3623786fc2126, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_IgnoreLayout: 1
+  m_MinWidth: -1
+  m_MinHeight: -1
+  m_PreferredWidth: -1
+  m_PreferredHeight: -1
+  m_FlexibleWidth: -1
+  m_FlexibleHeight: -1
+  m_LayoutPriority: 1
+--- !u!114 &1712614493
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1712614490}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_WrapAround: 0
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 0
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 21300000, guid: aa3d9c9aed2599c41a1c5b088a75dd5a, type: 3}
+    m_PressedSprite: {fileID: 21300000, guid: aa3d9c9aed2599c41a1c5b088a75dd5a, type: 3}
+    m_SelectedSprite: {fileID: 21300000, guid: aa3d9c9aed2599c41a1c5b088a75dd5a, type: 3}
+    m_DisabledSprite: {fileID: 21300000, guid: aa3d9c9aed2599c41a1c5b088a75dd5a, type: 3}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 1712614494}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 845080439}
+        m_TargetAssemblyTypeName: RedPanda.Camera.CameraPositioner, Camera
+        m_MethodName: ColoringPositions
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 1
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &1712614494
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1712614490}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: ccdbe90f64409834792746fffcd0bc07, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1712614495
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1712614490}
+  m_CullTransparentMesh: 1
 --- !u!1 &1725842481
 GameObject:
   m_ObjectHideFlags: 0
@@ -7148,6 +7394,8 @@ RectTransform:
   - {fileID: 235767607}
   - {fileID: 820189741}
   - {fileID: 832558462}
+  - {fileID: 178465646}
+  - {fileID: 1712614491}
   m_Father: {fileID: 524830447}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -7355,6 +7603,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 845080439}
+        m_TargetAssemblyTypeName: RedPanda.Camera.CameraPositioner, Camera
+        m_MethodName: ColoringPositions
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1726225275
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7393,11 +7653,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1726225270}
   m_CullTransparentMesh: 1
---- !u!1 &1758690286 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3777318334322458858, guid: 6543d098b9841b648aafad4782cbdaa5, type: 3}
-  m_PrefabInstance: {fileID: 348429349}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1766008680
 GameObject:
   m_ObjectHideFlags: 0
@@ -7995,13 +8250,8 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1277740778}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
---- !u!1 &2045659517 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2661159351314214987, guid: f29b5fc10397dd64296ca94f218c9d6e, type: 3}
-  m_PrefabInstance: {fileID: 1064251947}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &2045659518 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2661159351314214989, guid: f29b5fc10397dd64296ca94f218c9d6e, type: 3}

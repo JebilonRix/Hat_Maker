@@ -6,18 +6,28 @@ namespace RedPanda.Sprey
     {
         #region Fields
         [SerializeField] private float z_Pos;
-        
-        private Camera _cam;
+
+        private Vector3 rotation;
+        private UnityEngine.Camera _cam;
         #endregion Fields
 
+        #region Properties
+        public Vector3 Rotation { get => rotation; set => rotation = value; }
+        #endregion Properties
+
         #region Unity Methods
+        private void Start()
+        {
+            _cam = GameObject.Find("Main Camera").GetComponent<UnityEngine.Camera>();
+        }
         private void Update()
         {
             transform.position = _cam.ScreenToWorldPoint(new Vector3(Input.mousePosition.x, Input.mousePosition.y, z_Pos));
-        }
-        private void Start()
-        {
-            _cam = GameObject.Find("Main Camera").GetComponent<Camera>();
+
+            if (this.isActiveAndEnabled)
+            {
+                transform.rotation = Quaternion.Euler(Rotation); 
+            }
         }
         #endregion Unity Methods
     }

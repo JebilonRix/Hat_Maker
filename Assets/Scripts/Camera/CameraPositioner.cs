@@ -1,4 +1,6 @@
+using RedPanda.Sprey;
 using RedPanda.UserInterface;
+using System.Collections.Generic;
 using UnityEngine;
 
 namespace RedPanda.Camera
@@ -7,10 +9,49 @@ namespace RedPanda.Camera
     {
         #region Fields
         [SerializeField] private SO_UserInterfaceHandler _userInterfaceHandler;
-        [SerializeField] private SO_CameraPositionAndRotation[] _cameraPositions;
+        [SerializeField] private SpreyMover _mover;
+        [SerializeField] private List<SO_CameraPositionAndRotation> _cameraPositions;
+
+        [SerializeField] private SO_CameraPositionAndRotation front;//4
+        [SerializeField] private SO_CameraPositionAndRotation right;//5
+        [SerializeField] private SO_CameraPositionAndRotation back;//6
+        [SerializeField] private SO_CameraPositionAndRotation left;//7
+
+        private int _coloringIndex = 4;
+
         #endregion Fields
 
+        #region Properties
+        public int ColoringIndex
+        {
+            get
+            {
+                if (_coloringIndex < 4)
+                {
+                    _coloringIndex = 7;
+                }
+                else if (_coloringIndex > 7)
+                {
+                    _coloringIndex = 4;
+                }
+
+                return _coloringIndex;
+            }
+
+            private set => _coloringIndex = value;
+        }
+        #endregion Properties
+
         #region Unity Methods
+        private void Start()
+        {
+            ColoringIndex = 4;
+
+            _cameraPositions.Add(front);
+            _cameraPositions.Add(right);
+            _cameraPositions.Add(back);
+            _cameraPositions.Add(left);
+        }
         private void LateUpdate()
         {
             switch (_userInterfaceHandler.UserInterfaceState)
@@ -36,23 +77,33 @@ namespace RedPanda.Camera
                     break;
 
                 case UserInterfaceState.TakePhoto:
-                    MoveCamera(0);
+
                     break;
 
                 case UserInterfaceState.PhotoToPost:
-                    MoveCamera(0);
+
                     break;
 
                 case UserInterfaceState.SocialMedia:
-                    MoveCamera(0);
+
                     break;
 
                 case UserInterfaceState.ColorSelection:
-                    MoveCamera(4);
+                    MoveCamera(ColoringIndex);
+
                     break;
             }
         }
         #endregion Unity Methods
+
+        #region Public Methods
+        public void ColoringPositions(int way)
+        {
+            ColoringIndex += way;
+
+            _mover.Rotation = _cameraPositions[ColoringIndex].CameraRotation;
+        }
+        #endregion Public Methods
 
         #region Private Methods
         private void MoveCamera(int id)

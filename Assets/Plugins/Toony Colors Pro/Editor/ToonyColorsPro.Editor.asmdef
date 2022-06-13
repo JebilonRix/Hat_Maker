@@ -1,11 +1,12 @@
 {
-    "name": "Camera",
-    "rootNamespace": "RedPanda",
+    "name": "ToonyColorsPro.Editor",
+    "rootNamespace": "",
     "references": [
-        "GUID:c548c9c48a96ac54c9c932eb06dfabda",
-        "GUID:45af07b18183df74294cb382ea5aab2b"
+        "ToonyColorsPro.Runtime"
     ],
-    "includePlatforms": [],
+    "includePlatforms": [
+        "Editor"
+    ],
     "excludePlatforms": [],
     "allowUnsafeCode": false,
     "overrideReferences": false,

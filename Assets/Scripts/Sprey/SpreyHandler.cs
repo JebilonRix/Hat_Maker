@@ -46,7 +46,7 @@ namespace RedPanda.Sprey
         {
             _spreyObjectPrefab.SetActive(true);
 
-            Color selectedColor = Color.red;
+            Color selectedColor;
 
             if (colorName.ToLower() == "red")
             {
@@ -72,13 +72,29 @@ namespace RedPanda.Sprey
             {
                 selectedColor = Color.white;
             }
+            else if (colorName.ToLower() == "grey")
+            {
+                selectedColor = Color.grey;
+            }
+            else if (colorName.ToLower() == "black")
+            {
+                selectedColor = Color.black;
+            }
             else if (colorName.ToLower() == "pink")
             {
-                selectedColor = new Color(241, 145, 208);
+                selectedColor = new Color32(245, 145, 208, 255);
             }
             else if (colorName.ToLower() == "orange")
             {
-                selectedColor = new Color(242, 65, 48);
+                selectedColor = new Color32(242, 65, 48, 255);
+            }
+            else if (colorName.ToLower() == "magenta")
+            {
+                selectedColor = Color.magenta;
+            }
+            else
+            {
+                selectedColor = Color.clear;
             }
 
             Material[] colors = _meshRenderer.materials;
