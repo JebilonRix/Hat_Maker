@@ -3,19 +3,19 @@ using UnityEngine;
 
 namespace RedPanda.Flow
 {
-
-    [CreateAssetMenu(fileName = "FlowMananger", menuName = "RedPanda/FlowMananger")]
-    public class FlowMananger : ScriptableObject
+    public class FlowMananger : MonoBehaviour
     {
-        [SerializeField] private string[] _keywords = new string[] { "start", "select_hat",
+        [SerializeField]
+        private string[] _keywords = new string[] { "start", "select_hat",
             "paint_hat", "add_texture", "select_glass", "select_pose", "take_photo", "social_media" };
 
         [Header("Objects")]
-        [SerializeField] private GameObject _activeHat;
-        [SerializeField] private GameObject _activeGlass;
         [SerializeField] private GameObject _character;
         [SerializeField] private GameObject _sprey;
         [SerializeField] private GameObject _photoCamera;
+        [SerializeField] private GameObject _photocu;
+        private GameObject _activeHat;
+        private GameObject _activeGlass;
 
         [Header("Ui")]
         [SerializeField] private GameObject _startMenu;
@@ -44,7 +44,7 @@ namespace RedPanda.Flow
             //select_pose
             _flowDictionary.Add(_keywords[5], new GameObject[] { _selectionPose, _activeHat, _activeGlass });
             //take_photo
-            _flowDictionary.Add(_keywords[6], new GameObject[] { _photoCamera, _activeHat, _activeGlass });
+            _flowDictionary.Add(_keywords[6], new GameObject[] { _photocu, _photoCamera, _activeHat, _activeGlass });
             //social_media
             _flowDictionary.Add(_keywords[7], new GameObject[] { _selectionSocialMedia });
 
@@ -68,6 +68,14 @@ namespace RedPanda.Flow
             {
                 obj.SetActive(true);
             }
+        }
+        public void GetActiveHat(GameObject activeHat)
+        {
+            _activeHat = activeHat;
+        }
+        public void GetActiveGlass(GameObject activeGlass)
+        {
+            _activeGlass = activeGlass;
         }
     }
 }

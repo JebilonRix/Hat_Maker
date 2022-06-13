@@ -17,7 +17,12 @@ namespace RedPanda.Sapka
         private int _currentId;
         private int _currentTexture;
         private bool _hasTexture = false;
+
         #endregion Fields
+
+        #region Properties
+        public GameObject CurrentHat { get => _activeHat; private set => _activeHat = value; }
+        #endregion Properties
 
         #region Unity Methods
         private void Start()
@@ -35,7 +40,7 @@ namespace RedPanda.Sapka
         #region Public Methods
         public void NoHat()
         {
-            _activeHat = null;
+            CurrentHat = null;
 
             for (int i = 0; i < _hats.Length; i++)
             {
@@ -51,9 +56,9 @@ namespace RedPanda.Sapka
             {
                 if (i == id)
                 {
-                    _activeHat = _createdHat[i];
-                    _activeHat.SetActive(true);
-                    _stats = _activeHat.GetComponent<HatStat>();
+                    CurrentHat = _createdHat[i];
+                    CurrentHat.SetActive(true);
+                    _stats = CurrentHat.GetComponent<HatStat>();
                 }
                 else
                 {
@@ -66,7 +71,7 @@ namespace RedPanda.Sapka
         /// </summary>
         public void SetColor(int id)
         {
-            if (_activeHat == null)
+            if (CurrentHat == null)
             {
                 return;
             }
@@ -84,7 +89,7 @@ namespace RedPanda.Sapka
         /// </summary>
         public void SetTexture(int id)
         {
-            if (_activeHat == null)
+            if (CurrentHat == null)
             {
                 return;
             }
