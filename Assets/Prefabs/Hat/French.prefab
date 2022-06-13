@@ -11,10 +11,11 @@ GameObject:
   - component: {fileID: 2963209963051069015}
   - component: {fileID: 3864192671056067477}
   - component: {fileID: 3864192671056067476}
+  - component: {fileID: -3860082143142676182}
   - component: {fileID: 6324181861188234613}
   - component: {fileID: -4274334440705445028}
-  - component: {fileID: 3898170542748845649}
-  - component: {fileID: -8639093919078505620}
+  - component: {fileID: 3642537897512814091}
+  - component: {fileID: 4673073550615344987}
   m_Layer: 0
   m_Name: French
   m_TagString: Untagged
@@ -63,8 +64,8 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: d956ea348b8c32a41b55ee9f8b3835e6, type: 2}
-  - {fileID: 2100000, guid: 12fcfd876dbbd8b44a5d72734784a11c, type: 2}
+  - {fileID: 2100000, guid: 19f461398bb56804cacc6b64b4e9dea0, type: 2}
+  - {fileID: 2100000, guid: 19f461398bb56804cacc6b64b4e9dea0, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -86,6 +87,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &-3860082143142676182
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2473812576115291373}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -7791538255160839807, guid: a12cabffcdffd684f8a678e6d600d406, type: 3}
 --- !u!114 &6324181861188234613
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -139,11 +154,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   paintable: {fileID: 0}
   includeScale: 1
-  activation: 0
+  activation: 3
   baseScale: {x: 0, y: 0, z: 0}
   otherRenderers: []
   activated: 0
---- !u!114 &3898170542748845649
+--- !u!114 &3642537897512814091
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -158,7 +173,7 @@ MonoBehaviour:
   index: 0
   copySplatData: 0
   activated: 0
---- !u!114 &-8639093919078505620
+--- !u!114 &4673073550615344987
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -171,8 +186,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   slot:
-    Index: 0
-    Name: _MainTex
+    Index: 1
+    Name: _BaseMap
   coord: 0
   group:
     index: 0

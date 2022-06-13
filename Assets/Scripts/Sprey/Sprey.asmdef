@@ -1,0 +1,16 @@
+{
+    "name": "Sprey",
+    "rootNamespace": "",
+    "references": [
+        "GUID:3aebaf7ba25bb9f419c4dd48d4023cec"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

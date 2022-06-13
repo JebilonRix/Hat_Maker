@@ -46,8 +46,9 @@ namespace RedPanda.Camera
                 case UserInterfaceState.SocialMedia:
                     MoveCamera(0);
                     break;
+
                 case UserInterfaceState.ColorSelection:
-                    MoveCamera(1);
+                    MoveCamera(4);
                     break;
             }
         }
