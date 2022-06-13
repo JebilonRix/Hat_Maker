@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4506a7197d443c64c96ddcd31a481369, type: 3}
+  m_Name: FlowMananger
+  m_EditorClassIdentifier: 
+  _keywords:
+  - start
+  - select_hat
+  - paint_hat
+  - add_texture
+  - select_glass
+  - select_pose
+  - take_photo
+  - social_media
+  _activeHat: {fileID: 0}
+  _activeGlass: {fileID: 0}
+  _character: {fileID: 0}
+  _sprey: {fileID: 0}
+  _photoCamera: {fileID: 0}
+  _startMenu: {fileID: 0}
+  _selectionHat: {fileID: 0}
+  _selectionColor: {fileID: 0}
+  _selectionTexture: {fileID: 0}
+  _selectionGlass: {fileID: 0}
+  _selectionPose: {fileID: 0}
+  _selectionSocialMedia: {fileID: 0}
