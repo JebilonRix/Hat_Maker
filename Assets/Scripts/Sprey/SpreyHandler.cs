@@ -50,7 +50,7 @@ namespace RedPanda.Sprey
         #endregion Unity Methods
 
         #region Public Methods
-   
+
         public void ActiveSprey(string colorName)
         {
             _spreyObjectPrefab.SetActive(true);
@@ -100,6 +100,10 @@ namespace RedPanda.Sprey
             else if (colorName.ToLower() == "magenta")
             {
                 selectedColor = Color.magenta;
+            }
+            else if (colorName.ToLower() == "purple")
+            {
+                selectedColor = new Color32(105, 74, 217, 255);
             }
             else
             {

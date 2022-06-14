@@ -6,6 +6,8 @@ namespace RedPanda.Sprey
     {
         #region Fields
         [SerializeField] private float z_Pos;
+        [SerializeField] private float x_rotation = 15f;
+        [SerializeField] private float z_rotation = 80f;
 
         private Vector3 rotation = new Vector3(30, 0, 0);
         private UnityEngine.Camera _cam;
@@ -13,7 +15,7 @@ namespace RedPanda.Sprey
         #endregion Fields
 
         #region Properties
-       // public Vector3 Rotation { get => rotation; set => rotation = value; }
+        // public Vector3 Rotation { get => rotation; set => rotation = value; }
         public int Index
         {
             get
@@ -60,10 +62,10 @@ namespace RedPanda.Sprey
 
             rotation = Index switch
             {
-                1 => new Vector3(30, -90, 0),
-                2 => new Vector3(30, -180, 0),
-                3 => new Vector3(30, 90, 0),
-                _ => new Vector3(30, 0, 0),
+                1 => new Vector3(x_rotation, -90, z_rotation),
+                2 => new Vector3(x_rotation, -180, z_rotation),
+                3 => new Vector3(x_rotation, 90, z_rotation),
+                _ => new Vector3(x_rotation, 0, z_rotation),
             };
         }
         #endregion Public Methods
