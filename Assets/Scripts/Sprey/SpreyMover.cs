@@ -9,7 +9,7 @@ namespace RedPanda.Sprey
         [SerializeField] private float x_rotation = 15f;
         [SerializeField] private float z_rotation = 80f;
 
-        private Vector3 rotation ;
+        private Vector3 rotation;
         private UnityEngine.Camera _cam;
         private int _index;
         #endregion Fields
@@ -45,7 +45,7 @@ namespace RedPanda.Sprey
         {
             transform.position = _cam.ScreenToWorldPoint(new Vector3(Input.mousePosition.x, Input.mousePosition.y, z_Pos));
 
-            if (this.isActiveAndEnabled)
+            if (isActiveAndEnabled)
             {
                 transform.rotation = Quaternion.Euler(rotation);
             }
@@ -56,8 +56,6 @@ namespace RedPanda.Sprey
         public void SetSmokeDirection(int index)
         {
             Index += index;
-
-            Debug.Log("Index: " + Index);
 
             rotation = Index switch
             {

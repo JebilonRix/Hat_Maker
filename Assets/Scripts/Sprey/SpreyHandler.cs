@@ -10,11 +10,9 @@ namespace RedPanda.Sprey
 
         private ParticleSystem _smoke;
         private ParticleSystem.MainModule _smokeColor;
-        private ParticleSystem.ShapeModule _smokeShape;
 
         private P3dPaintSphere _paint;
         private MeshRenderer _meshRenderer;
-        private int _index;
         #endregion Fields
 
         #region Unity Methods
@@ -22,7 +20,6 @@ namespace RedPanda.Sprey
         {
             _smoke = _spreyObjectPrefab.GetComponent<ParticleSystem>();
             _smokeColor = _smoke.main;
-            _smokeShape = _smoke.shape;
 
             _meshRenderer = _spreyObjectPrefab.GetComponent<MeshRenderer>();
             _paint = _spreyObjectPrefab.GetComponent<P3dPaintSphere>();
@@ -102,7 +99,7 @@ namespace RedPanda.Sprey
             }
             else
             {
-                selectedColor = Color.clear;
+                selectedColor = Color.white;
             }
 
             Material[] colors = _meshRenderer.materials;
