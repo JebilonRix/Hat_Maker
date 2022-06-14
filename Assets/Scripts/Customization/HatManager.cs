@@ -6,8 +6,8 @@ namespace RedPanda.Sapka
     public class HatManager : MonoBehaviour
     {
         #region Fields
-        [SerializeField] private GameObject[] _hats;
         [SerializeField] private Transform _hatPoint;
+        [SerializeField] private GameObject[] _hats;
         [SerializeField] private Material[] _textureMaterial;
         [SerializeField] private Texture2D[] _texture;
 
@@ -69,21 +69,21 @@ namespace RedPanda.Sapka
         /// <summary>
         /// This is for ui to set active hat's color.
         /// </summary>
-        public void SetColor(int id)
-        {
-            if (CurrentHat == null)
-            {
-                return;
-            }
+        //public void SetColor(int id)
+        //{
+        //    if (CurrentHat == null)
+        //    {
+        //        return;
+        //    }
 
-            _stats.SetColor(id);
-            _currentId = id;
+        //    _stats.SetColor(id);
+        //    _currentId = id;
 
-            if (_hasTexture)
-            {
-                SetTexture(_currentTexture);
-            }
-        }
+        //    if (_hasTexture)
+        //    {
+        //        SetTexture(_currentTexture);
+        //    }
+        //}
         /// <summary>
         /// This is for ui to set active hat's texture.
         /// </summary>
@@ -100,11 +100,14 @@ namespace RedPanda.Sapka
             {
                 _stats.SetColor(_currentId);
 
-                Material[] materialArray = _stats.Renderer.materials;
+                 Material[] materialArray = _stats.Renderer.materials;
+
+                //Material[] materialArray = _hats[id].GetComponent<Renderer>().materials;
 
                 _textureMaterial[id].SetColor("_BaseColor", materialArray[0].color);
                 _textureMaterial[id].SetTexture("_BaseMap", _texture[id]);
 
+  
                 materialArray[0] = _textureMaterial[id];
                 _stats.Renderer.materials = materialArray;
 

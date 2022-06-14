@@ -9,7 +9,7 @@ namespace RedPanda.Sprey
         [SerializeField] private float x_rotation = 15f;
         [SerializeField] private float z_rotation = 80f;
 
-        private Vector3 rotation = new Vector3(30, 0, 0);
+        private Vector3 rotation ;
         private UnityEngine.Camera _cam;
         private int _index;
         #endregion Fields
