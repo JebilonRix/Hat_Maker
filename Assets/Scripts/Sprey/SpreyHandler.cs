@@ -17,10 +17,6 @@ namespace RedPanda.Sprey
         private int _index;
         #endregion Fields
 
-        #region Properties
-
-        #endregion Properties
-
         #region Unity Methods
         private void Awake()
         {
@@ -50,7 +46,6 @@ namespace RedPanda.Sprey
         #endregion Unity Methods
 
         #region Public Methods
-
         public void ActiveSprey(string colorName)
         {
             _spreyObjectPrefab.SetActive(true);

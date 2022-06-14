@@ -87,39 +87,39 @@ namespace RedPanda.Sapka
         /// <summary>
         /// This is for ui to set active hat's texture.
         /// </summary>
-        public void SetTexture(int id)
-        {
-            if (CurrentHat == null)
-            {
-                return;
-            }
+        //public void SetTexture(int id)
+        //{
+        //    if (CurrentHat == null)
+        //    {
+        //        return;
+        //    }
 
-            _stats.TextureType = (TextureType)id;
+        //    _stats.TextureType = (TextureType)id;
 
-            if (_stats.TextureType != TextureType.Clear)
-            {
-                _stats.SetColor(_currentId);
+        //    if (_stats.TextureType != TextureType.Clear)
+        //    {
+        //        _stats.SetColor(_currentId);
 
-                 Material[] materialArray = _stats.Renderer.materials;
+        //         Material[] materialArray = _stats.Renderer.materials;
 
-                //Material[] materialArray = _hats[id].GetComponent<Renderer>().materials;
+        //        //Material[] materialArray = _hats[id].GetComponent<Renderer>().materials;
 
-                _textureMaterial[id].SetColor("_BaseColor", materialArray[0].color);
-                _textureMaterial[id].SetTexture("_BaseMap", _texture[id]);
+        //        _textureMaterial[id].SetColor("_BaseColor", materialArray[0].color);
+        //        _textureMaterial[id].SetTexture("_BaseMap", _texture[id]);
 
   
-                materialArray[0] = _textureMaterial[id];
-                _stats.Renderer.materials = materialArray;
+        //        materialArray[0] = _textureMaterial[id];
+        //        _stats.Renderer.materials = materialArray;
 
-                _hasTexture = true;
-                _currentTexture = id;
-            }
-            else
-            {
-                _stats.SetColor(_currentId);
-                _hasTexture = false;
-            }
-        }
+        //        _hasTexture = true;
+        //        _currentTexture = id;
+        //    }
+        //    else
+        //    {
+        //        _stats.SetColor(_currentId);
+        //        _hasTexture = false;
+        //    }
+        //}
         #endregion Public Methods
 
         #region Private Methods

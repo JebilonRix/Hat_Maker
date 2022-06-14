@@ -1,26 +1,22 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 namespace RedPanda
 {
-    [RequireComponent(typeof(SpriteRenderer))]
     public class BackgroundRandomizer : MonoBehaviour
     {
         [SerializeField] private Sprite[] _backgrounds;
-        SpriteRenderer _renderer;
-
-        private void Awake()
-        {
-            if (_renderer == null)
-            {
-                _renderer = GetComponent<SpriteRenderer>();
-            }
-        }
+        [SerializeField] private SpriteRenderer[] _renderers;
 
         public void SetRandomBackground()
         {
-            _renderer.sprite = _backgrounds[Random.Range(0, _backgrounds.Length)];
+            int x = Random.Range(0, _backgrounds.Length);
+
+            Debug.Log(x);
+
+            foreach (SpriteRenderer item in _renderers)
+            {
+                item.sprite = _backgrounds[x];
+            }
         }
     }
 }

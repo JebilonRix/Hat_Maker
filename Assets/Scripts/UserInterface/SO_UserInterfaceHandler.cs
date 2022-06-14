@@ -7,6 +7,7 @@ namespace RedPanda.UserInterface
     {
         #region Fields
         [SerializeField] private UserInterfaceState _userInterfaceState = UserInterfaceState.MainMenu;
+        
         private Initializator _initializator;
         #endregion Fields
 

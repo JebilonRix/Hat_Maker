@@ -1,4 +1,3 @@
-using RedPanda.Sprey;
 using RedPanda.UserInterface;
 using System.Collections.Generic;
 using UnityEngine;
@@ -10,14 +9,12 @@ namespace RedPanda.Camera
         #region Fields
         [SerializeField] private SO_UserInterfaceHandler _userInterfaceHandler;
         [SerializeField] private List<SO_CameraPositionAndRotation> _cameraPositions;
-
         [SerializeField] private SO_CameraPositionAndRotation front;//4
         [SerializeField] private SO_CameraPositionAndRotation right;//5
         [SerializeField] private SO_CameraPositionAndRotation back;//6
         [SerializeField] private SO_CameraPositionAndRotation left;//7
 
         private int _coloringIndex = 4;
-
         #endregion Fields
 
         #region Properties
