@@ -15,7 +15,6 @@ namespace RedPanda.Sprey
         #endregion Fields
 
         #region Properties
-        // public Vector3 Rotation { get => rotation; set => rotation = value; }
         public int Index
         {
             get
