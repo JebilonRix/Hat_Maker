@@ -8,17 +8,25 @@ namespace RedPanda.Sprey
         #region Fields
         [SerializeField] private GameObject _spreyObjectPrefab;
 
-        private ParticleSystem.MainModule _smokeColor;
         private ParticleSystem _smoke;
+        private ParticleSystem.MainModule _smokeColor;
+        private ParticleSystem.ShapeModule _smokeShape;
+
         private P3dPaintSphere _paint;
         private MeshRenderer _meshRenderer;
+        private int _index;
         #endregion Fields
+
+        #region Properties
+
+        #endregion Properties
 
         #region Unity Methods
         private void Awake()
         {
             _smoke = _spreyObjectPrefab.GetComponent<ParticleSystem>();
             _smokeColor = _smoke.main;
+            _smokeShape = _smoke.shape;
 
             _meshRenderer = _spreyObjectPrefab.GetComponent<MeshRenderer>();
             _paint = _spreyObjectPrefab.GetComponent<P3dPaintSphere>();
@@ -42,6 +50,7 @@ namespace RedPanda.Sprey
         #endregion Unity Methods
 
         #region Public Methods
+   
         public void ActiveSprey(string colorName)
         {
             _spreyObjectPrefab.SetActive(true);

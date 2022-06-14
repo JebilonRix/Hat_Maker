@@ -7,18 +7,38 @@ namespace RedPanda.Sprey
         #region Fields
         [SerializeField] private float z_Pos;
 
-        private Vector3 rotation;
+        private Vector3 rotation = new Vector3(30, 0, 0);
         private UnityEngine.Camera _cam;
+        private int _index;
         #endregion Fields
 
         #region Properties
-        public Vector3 Rotation { get => rotation; set => rotation = value; }
+       // public Vector3 Rotation { get => rotation; set => rotation = value; }
+        public int Index
+        {
+            get
+            {
+                if (_index < 0)
+                {
+                    _index = 3;
+                }
+                if (_index > 3)
+                {
+                    _index = 0;
+                }
+
+                return _index;
+            }
+
+            private set => _index = value;
+        }
         #endregion Properties
 
         #region Unity Methods
         private void Start()
         {
             _cam = GameObject.Find("Main Camera").GetComponent<UnityEngine.Camera>();
+            SetSmokeDirection(0);
         }
         private void Update()
         {
@@ -26,9 +46,26 @@ namespace RedPanda.Sprey
 
             if (this.isActiveAndEnabled)
             {
-                transform.rotation = Quaternion.Euler(Rotation); 
+                transform.rotation = Quaternion.Euler(rotation);
             }
         }
         #endregion Unity Methods
+
+        #region Public Methods
+        public void SetSmokeDirection(int index)
+        {
+            Index += index;
+
+            Debug.Log("Index: " + Index);
+
+            rotation = Index switch
+            {
+                1 => new Vector3(30, -90, 0),
+                2 => new Vector3(30, -180, 0),
+                3 => new Vector3(30, 90, 0),
+                _ => new Vector3(30, 0, 0),
+            };
+        }
+        #endregion Public Methods
     }
 }

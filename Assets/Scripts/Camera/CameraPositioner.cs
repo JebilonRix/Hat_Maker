@@ -9,7 +9,6 @@ namespace RedPanda.Camera
     {
         #region Fields
         [SerializeField] private SO_UserInterfaceHandler _userInterfaceHandler;
-        [SerializeField] private SpreyMover _mover;
         [SerializeField] private List<SO_CameraPositionAndRotation> _cameraPositions;
 
         [SerializeField] private SO_CameraPositionAndRotation front;//4
@@ -100,8 +99,6 @@ namespace RedPanda.Camera
         public void ColoringPositions(int way)
         {
             ColoringIndex += way;
-
-            _mover.Rotation = _cameraPositions[ColoringIndex].CameraRotation;
         }
         #endregion Public Methods
 

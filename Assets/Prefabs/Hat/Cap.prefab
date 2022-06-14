@@ -203,5 +203,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 0
-  copySplatData: 1
+  copySplatData: 0
   activated: 0
