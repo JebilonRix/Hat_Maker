@@ -1,5 +1,5 @@
-using System.Collections.Generic;
 using UnityEngine;
+using PaintIn3D.Examples;
 
 namespace RedPanda.Sapka
 {
@@ -8,44 +8,28 @@ namespace RedPanda.Sapka
         #region Fields
         [SerializeField] private Transform _hatPoint;
         [SerializeField] private GameObject[] _hats;
+        [SerializeField] private P3dButtonClearAll clear;
 
-        private List<GameObject> _createdHat = new List<GameObject>();
         private GameObject _activeHat;
-        private HatStat _stats;
-        //private int _currentId;
-        //private int _currentTexture;
-        //private bool _hasTexture = false;
-
         #endregion Fields
 
         #region Properties
         public GameObject CurrentHat { get => _activeHat; private set => _activeHat = value; }
         #endregion Properties
 
-        #region Unity Methods
-        private void Start()
-        {
-            for (int i = 0; i < _hats.Length; i++)
-            {
-                GameObject hat = Instantiate(_hats[i], _hatPoint);
-                hat.SetActive(false);
-                _createdHat.Add(hat);
-            }
-            //_currentId = 0;
-        }
-        #endregion Unity Methods
-
         #region Public Methods
         public void NoHat()
         {
             Debug.Log("no hat");
 
-            CurrentHat = null;
-
-            foreach (GameObject item in _hats)
+            for (int i = 0; i < _hats.Length; i++)
             {
-                item.GetComponent<HatStat>().ResetValues();
+                _hats[i].SetActive(true);
             }
+
+            clear.ClearAll();
+
+            CurrentHat = null;
 
             for (int i = 0; i < _hats.Length; i++)
             {
@@ -61,9 +45,8 @@ namespace RedPanda.Sapka
             {
                 if (i == id)
                 {
-                    CurrentHat = _createdHat[i];
+                    CurrentHat = _hats[i];
                     CurrentHat.SetActive(true);
-                    _stats = CurrentHat.GetComponent<HatStat>();
                 }
                 else
                 {
@@ -71,56 +54,14 @@ namespace RedPanda.Sapka
                 }
             }
         }
-        /// <summary>
-        /// This is for ui to set active hat's color.
-        /// </summary>
-        //public void SetColor(int id)
-        //{
-        //    _stats.SetColor(id);
-        //}
-        /// <summary>
-        /// This is for ui to set active hat's texture.
-        /// </summary>
-        //public void SetTexture(int id)
-        //{
-        //    if (CurrentHat == null)
-        //    {
-        //        return;
-        //    }
-
-        //    _stats.TextureType = (TextureType)id;
-
-        //    if (_stats.TextureType != TextureType.Clear)
-        //    {
-        //        _stats.SetColor(_currentId);
-
-        //         Material[] materialArray = _stats.Renderer.materials;
-
-        //        //Material[] materialArray = _hats[id].GetComponent<Renderer>().materials;
-
-        //        _textureMaterial[id].SetColor("_BaseColor", materialArray[0].color);
-        //        _textureMaterial[id].SetTexture("_BaseMap", _texture[id]);
-
-        //        materialArray[0] = _textureMaterial[id];
-        //        _stats.Renderer.materials = materialArray;
-
-        //        _hasTexture = true;
-        //        _currentTexture = id;
-        //    }
-        //    else
-        //    {
-        //        _stats.SetColor(_currentId);
-        //        _hasTexture = false;
-        //    }
-        //}
         #endregion Public Methods
 
         #region Private Methods
         private void SetDeactive(int i)
         {
-            if (_createdHat[i].activeSelf)
+            if (_hats[i].activeSelf)
             {
-                _createdHat[i].SetActive(false);
+                _hats[i].SetActive(false);
             }
         }
         #endregion Private Methods
