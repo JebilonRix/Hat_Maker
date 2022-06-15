@@ -8,15 +8,13 @@ namespace RedPanda.Sapka
         #region Fields
         [SerializeField] private Transform _hatPoint;
         [SerializeField] private GameObject[] _hats;
-        [SerializeField] private Material[] _textureMaterial;
-        [SerializeField] private Texture2D[] _texture;
 
         private List<GameObject> _createdHat = new List<GameObject>();
         private GameObject _activeHat;
         private HatStat _stats;
-        private int _currentId;
-        private int _currentTexture;
-        private bool _hasTexture = false;
+        //private int _currentId;
+        //private int _currentTexture;
+        //private bool _hasTexture = false;
 
         #endregion Fields
 
@@ -33,14 +31,21 @@ namespace RedPanda.Sapka
                 hat.SetActive(false);
                 _createdHat.Add(hat);
             }
-            _currentId = 0;
+            //_currentId = 0;
         }
         #endregion Unity Methods
 
         #region Public Methods
         public void NoHat()
         {
+            Debug.Log("no hat");
+
             CurrentHat = null;
+
+            foreach (GameObject item in _hats)
+            {
+                item.GetComponent<HatStat>().ResetValues();
+            }
 
             for (int i = 0; i < _hats.Length; i++)
             {
@@ -71,18 +76,7 @@ namespace RedPanda.Sapka
         /// </summary>
         //public void SetColor(int id)
         //{
-        //    if (CurrentHat == null)
-        //    {
-        //        return;
-        //    }
-
         //    _stats.SetColor(id);
-        //    _currentId = id;
-
-        //    if (_hasTexture)
-        //    {
-        //        SetTexture(_currentTexture);
-        //    }
         //}
         /// <summary>
         /// This is for ui to set active hat's texture.
@@ -107,7 +101,6 @@ namespace RedPanda.Sapka
         //        _textureMaterial[id].SetColor("_BaseColor", materialArray[0].color);
         //        _textureMaterial[id].SetTexture("_BaseMap", _texture[id]);
 
-  
         //        materialArray[0] = _textureMaterial[id];
         //        _stats.Renderer.materials = materialArray;
 

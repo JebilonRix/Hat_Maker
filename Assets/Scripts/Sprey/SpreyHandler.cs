@@ -10,8 +10,8 @@ namespace RedPanda.Sprey
 
         private ParticleSystem _smoke;
         private ParticleSystem.MainModule _smokeColor;
-
         private P3dPaintSphere _paint;
+
         private MeshRenderer _meshRenderer;
         #endregion Fields
 
@@ -28,7 +28,6 @@ namespace RedPanda.Sprey
         {
             DeactiveSprey();
         }
-
         private void Update()
         {
             if (Input.GetMouseButtonDown(0))

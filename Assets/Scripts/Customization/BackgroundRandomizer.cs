@@ -11,8 +11,6 @@ namespace RedPanda
         {
             int x = Random.Range(0, _backgrounds.Length);
 
-            Debug.Log(x);
-
             foreach (SpriteRenderer item in _renderers)
             {
                 item.sprite = _backgrounds[x];

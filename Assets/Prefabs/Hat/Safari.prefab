@@ -16,9 +16,9 @@ GameObject:
   - component: {fileID: 4875546196540680571}
   - component: {fileID: -3208878188450075319}
   - component: {fileID: -2759964354016662358}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Safari
-  m_TagString: Untagged
+  m_TagString: Hat
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -64,7 +64,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 19f461398bb56804cacc6b64b4e9dea0, type: 2}
+  - {fileID: 2100000, guid: d956ea348b8c32a41b55ee9f8b3835e6, type: 2}
   - {fileID: 2100000, guid: 19f461398bb56804cacc6b64b4e9dea0, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
@@ -113,33 +113,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 93ff388a5adf9a04f981139f92de61d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  colorType: 5
-  textureType: 3
-  _combines:
-  - colorType: 0
-    materials:
-    - {fileID: 2100000, guid: d8da702d5f94f2e4c9aa9b51bad36ccb, type: 2}
-    - {fileID: 2100000, guid: d956ea348b8c32a41b55ee9f8b3835e6, type: 2}
-  - colorType: 1
-    materials:
-    - {fileID: 2100000, guid: 64bc6674747a4f246b6978a6684cfbe7, type: 2}
-    - {fileID: 2100000, guid: d956ea348b8c32a41b55ee9f8b3835e6, type: 2}
-  - colorType: 2
-    materials:
-    - {fileID: 2100000, guid: f7c4b07947a48dc4989df44d03197f33, type: 2}
-    - {fileID: 2100000, guid: d956ea348b8c32a41b55ee9f8b3835e6, type: 2}
-  - colorType: 3
-    materials:
-    - {fileID: 2100000, guid: 692a9c6b68ff84e4e99d3c5285fe2ffc, type: 2}
-    - {fileID: 2100000, guid: d956ea348b8c32a41b55ee9f8b3835e6, type: 2}
-  - colorType: 4
-    materials:
-    - {fileID: 2100000, guid: bd241224e2a9eea44a174cfaa11608e5, type: 2}
-    - {fileID: 2100000, guid: d956ea348b8c32a41b55ee9f8b3835e6, type: 2}
-  - colorType: 5
-    materials:
-    - {fileID: 2100000, guid: d956ea348b8c32a41b55ee9f8b3835e6, type: 2}
-    - {fileID: 2100000, guid: d956ea348b8c32a41b55ee9f8b3835e6, type: 2}
+  _defaultMaterial: {fileID: 2100000, guid: 19f461398bb56804cacc6b64b4e9dea0, type: 2}
 --- !u!114 &4875546196540680571
 MonoBehaviour:
   m_ObjectHideFlags: 0

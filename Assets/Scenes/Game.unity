@@ -1636,6 +1636,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3777318334322458860, guid: 6543d098b9841b648aafad4782cbdaa5, type: 3}
+      propertyPath: m_CullingMask.m_Bits
+      value: 65
+      objectReference: {fileID: 0}
     - target: {fileID: 3777318334322458863, guid: 6543d098b9841b648aafad4782cbdaa5, type: 3}
       propertyPath: m_RootOrder
       value: 3
@@ -5966,7 +5970,7 @@ PrefabInstance:
       objectReference: {fileID: 1638599220495225972}
     - target: {fileID: 2661159351314214989, guid: f29b5fc10397dd64296ca94f218c9d6e, type: 3}
       propertyPath: m_RootOrder
-      value: 7
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 2661159351314214989, guid: f29b5fc10397dd64296ca94f218c9d6e, type: 3}
       propertyPath: m_LocalPosition.x
@@ -83799,6 +83803,10 @@ PrefabInstance:
       value: 3.25
       objectReference: {fileID: 0}
     - target: {fileID: 2423700010532575065, guid: 3da92cc7490e5244997b6cdc4d69c3b4, type: 3}
+      propertyPath: ColorModule.enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2423700010532575065, guid: 3da92cc7490e5244997b6cdc4d69c3b4, type: 3}
       propertyPath: ShapeModule.arc.mode
       value: 0
       objectReference: {fileID: 0}
@@ -83824,7 +83832,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2423700010532575065, guid: 3da92cc7490e5244997b6cdc4d69c3b4, type: 3}
       propertyPath: ShapeModule.m_Rotation.y
-      value: -10.06
+      value: -30
       objectReference: {fileID: 0}
     - target: {fileID: 2423700010532575065, guid: 3da92cc7490e5244997b6cdc4d69c3b4, type: 3}
       propertyPath: ShapeModule.m_Rotation.z
@@ -83837,6 +83845,14 @@ PrefabInstance:
     - target: {fileID: 2423700010532575065, guid: 3da92cc7490e5244997b6cdc4d69c3b4, type: 3}
       propertyPath: InitialModule.startSpeed.scalar
       value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2423700010532575065, guid: 3da92cc7490e5244997b6cdc4d69c3b4, type: 3}
+      propertyPath: CollisionModule.collisionMessages
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2423700010532575065, guid: 3da92cc7490e5244997b6cdc4d69c3b4, type: 3}
+      propertyPath: CollisionModule.collidesWith.m_Bits
+      value: 64
       objectReference: {fileID: 0}
     - target: {fileID: 2423700010532575065, guid: 3da92cc7490e5244997b6cdc4d69c3b4, type: 3}
       propertyPath: InitialModule.startColor.maxColor.b

@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -19,7 +17,6 @@ namespace RedPanda
         }
         public void IncreaseFollowerCount()
         {
-            Debug.Log("Follower count increased by ");
             _follower += Random.Range(10, 500);
             _text.text = _follower.ToString();
         }
