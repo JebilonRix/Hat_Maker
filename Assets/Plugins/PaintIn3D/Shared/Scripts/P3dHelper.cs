@@ -269,7 +269,9 @@ namespace PaintIn3D
 				quadMeshSet = true;
 				quadMesh    = gameObject.GetComponent<MeshFilter>().sharedMesh;
 
-				Object.DestroyImmediate(gameObject);
+				//Object.DestroyImmediate(gameObject);
+
+				Object.Destroy(gameObject);
 			}
 
 			return quadMesh;
