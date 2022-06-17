@@ -10,9 +10,12 @@ namespace RedPanda.Sprey
 
         private ParticleSystem _smoke;
         private ParticleSystem.MainModule _smokeColor;
+        private ParticleSystem.EmissionModule _smokeEmession;
         private P3dPaintSphere _paint;
 
         private MeshRenderer _meshRenderer;
+        private float timer = 0f;
+        private float targetCount = 0.25f;
         #endregion Fields
 
         #region Unity Methods
@@ -20,6 +23,7 @@ namespace RedPanda.Sprey
         {
             _smoke = _spreyObjectPrefab.GetComponent<ParticleSystem>();
             _smokeColor = _smoke.main;
+            _smokeEmession = _smoke.emission;
 
             _meshRenderer = _spreyObjectPrefab.GetComponent<MeshRenderer>();
             _paint = _spreyObjectPrefab.GetComponent<P3dPaintSphere>();
@@ -34,9 +38,19 @@ namespace RedPanda.Sprey
             {
                 _smoke.Play();
             }
+            else if (Input.GetMouseButton(0))
+            {
+                timer += Time.deltaTime;
+
+                if (timer > targetCount)
+                {
+                    _smokeEmession.enabled = true;
+                }
+            }
             else if (Input.GetMouseButtonUp(0))
             {
                 _smoke.Stop();
+                timer = 0;
             }
         }
         #endregion Unity Methods
@@ -109,6 +123,7 @@ namespace RedPanda.Sprey
         }
         public void DeactiveSprey()
         {
+            _smokeEmession.enabled = false;
             _smoke.Stop();
             _spreyObjectPrefab.SetActive(false);
         }
