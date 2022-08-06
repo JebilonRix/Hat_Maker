@@ -84189,6 +84189,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2423700010532575065, guid: 3da92cc7490e5244997b6cdc4d69c3b4, type: 3}
+      propertyPath: EmissionModule.enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2423700010532575065, guid: 3da92cc7490e5244997b6cdc4d69c3b4, type: 3}
       propertyPath: ShapeModule.m_Position.y
       value: 0.31
       objectReference: {fileID: 0}
@@ -84295,6 +84299,10 @@ PrefabInstance:
     - target: {fileID: 2423700010532575068, guid: 3da92cc7490e5244997b6cdc4d69c3b4, type: 3}
       propertyPath: m_Name
       value: Sprey
+      objectReference: {fileID: 0}
+    - target: {fileID: 2423700010532575068, guid: 3da92cc7490e5244997b6cdc4d69c3b4, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2423700010532575071, guid: 3da92cc7490e5244997b6cdc4d69c3b4, type: 3}
       propertyPath: scale.x
